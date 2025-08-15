@@ -95,7 +95,7 @@ nip https://blog.example.com/article
 - **Colly** - веб-скрапер
 - **go-readability** - извлечение читаемого контента
 - **html-to-markdown** - конвертация HTML в markdown
-- **enry** - детекция языка программирования
+- **enry** - детекция языка программирования в блоках кода Markdown файла
 - **logrus** - логирование
 
 ## Ethical Scraping
