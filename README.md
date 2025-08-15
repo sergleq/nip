@@ -1,6 +1,6 @@
 # NIP - Command Line Web to Markdown Converter
 
-NIP - это командная строка для преобразования веб-страниц в markdown файлы. Основан на технологиях из проекта [TGNIP](https://github.com/sergleq/tgnip).
+NIP - это командная строка для преобразования веб-страниц в markdown файлы. Основан на технологиях из проекта 
 
 ## Возможности
 
@@ -16,7 +16,9 @@ NIP - это командная строка для преобразования
 
 - Go 1.23.0 или выше
 
-### Сборка
+### Сборка и установка
+
+#### Локальная сборка
 
 ```bash
 git clone https://github.com/sergleq/nip.git
@@ -24,23 +26,45 @@ cd nip
 go build -o nip main.go
 ```
 
+#### Глобальная установка (рекомендуется)
+
+Для использования команды `nip` из любой папки:
+
+```bash
+git clone https://github.com/sergleq/nip.git
+cd nip
+make install
+```
+
+После установки команда `nip <url>` будет доступна из любой директории.
+
+#### Удаление
+
+Для удаления программы из системы:
+
+```bash
+make uninstall
+```
+
 ## Использование
 
 ```bash
-./nip <URL>
+nip <URL>
 ```
+
+**Примечание:** Если вы установили программу глобально через `make install`, используйте просто `nip <URL>`. Если собрали локально, используйте `./nip <URL>`.
 
 ### Примеры
 
 ```bash
 # Преобразование простой страницы
-./nip https://example.com
+nip https://example.com
 
 # Преобразование GitHub репозитория
-./nip https://github.com/golang/go
+nip https://github.com/golang/go
 
 # Преобразование статьи
-./nip https://blog.example.com/article
+nip https://blog.example.com/article
 ```
 
 ### Выходные данные
@@ -86,7 +110,3 @@ go build -o nip main.go
 ## Лицензия
 
 MIT License
-
-## Автор
-
-Создано на основе [TGNIP](https://github.com/sergleq/tgnip) - Telegram бота для преобразования ссылок в markdown.

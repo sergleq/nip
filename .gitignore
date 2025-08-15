@@ -1,1 +1,42 @@
-tgnip/
+# Бинарные файлы
+nip
+nip-*
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Временные файлы
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Markdown файлы (созданные программой)
+*.md
+!README.md
+
+# Логи
+*.log
+
+# IDE файлы
+.vscode/
+.idea/
+*.sublime-*
+
+# OS файлы
+.DS_Store
+Thumbs.db
+
+# Go файлы
+*.test
+*.out
+go.work
+
+# Переменные окружения
+.env
+.env.local
+
+# Кэш
+.cache/
